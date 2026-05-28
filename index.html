@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-Study Bridge | South Korea International Student Gateway</title>
+  <meta name="description" content="K-Study Bridge is your trusted partner for university admissions, student visas, housing solutions, and living guidance in South Korea. Beautiful interactive dashboard included!">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Glowing Lights -->
+  <div class="glowing-bg-circle glowing-bg-circle-1"></div>
+  <div class="glowing-bg-circle glowing-bg-circle-2"></div>
+
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon-img-wrap">
+          <img src="images/k_logo.png" alt="K-Study Bridge" class="nav-logo-img">
+        </div>
+        <div class="logo-meta">
+          <h1 data-translate="logoName">K-Study Bridge</h1>
+          <span data-translate="logoTagline">БНСУ-д Суралцах Гүүр</span>
+        </div>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link" data-translate="navHome">Нүүр</a></li>
+        <li><a href="#services" class="nav-link" data-translate="navServices">Үйлчилгээ</a></li>
+        <li><a href="#dashboard" class="nav-link" data-translate="navDashboard">Интерактив Булан</a></li>
+        <li><a href="#booking" class="nav-link" data-translate="navBooking">Зөвлөгөө Авах</a></li>
+        <li><a href="#faq" class="nav-link" data-translate="navFaq">Асуулт Хариулт</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <select id="lang-select" class="lang-select-dropdown" aria-label="Select Language">
+          <option value="mn">Монгол 🇲🇳</option>
+          <option value="en">English 🇺🇸</option>
+          <option value="ko">한국어 🇰🇷</option>
+        </select>
+        <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle Theme">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Landing Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-badge" data-translate="heroBadge">🎓 Өмнөд Солонгосын Гадаад Оюутны Мэдээллийн Нэгдсэн Сан</span>
+        <h2 class="hero-title" data-translate="heroTitle">Солонгост суралцах таны хамгийн дөт, найдвартай зам</h2>
+        <p class="hero-desc" data-translate="heroDesc">Сургууль сонголт, хэлний бэлтгэл, визний бичиг баримт, амьжиргааны зардал тооцоолуур, тохилог орон сууц олоход бид танд эхнээс нь дуустал туслах болно.</p>
+        
+        <div class="hero-actions">
+          <a href="#dashboard" class="btn-primary" data-translate="heroBtnExplore">Интерактив хэрэгслийг турших</a>
+          <a href="#booking" class="btn-secondary" data-translate="heroBtnConsult">Үнэгүй зөвлөгөө авах</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4>1,200+</h4>
+            <p data-translate="heroStatsStudents">Амжилттай зөвлөсөн оюутан</p>
+          </div>
+          <div class="stat-item">
+            <h4>45+</h4>
+            <p data-translate="heroStatsUniversities">Хамтрагч сургуулиуд</p>
+          </div>
+          <div class="stat-item">
+            <h4>98.7%</h4>
+            <p data-translate="heroStatsVisa">Визний амжилт</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-globe-box">
+          <img src="images/k_logo.png" alt="K-Study Bridge Globe" class="hero-center-logo">
+        </div>
+        <!-- Floating overlay widgets -->
+        <div class="floating-overlay-card card-1">
+          <div class="floating-card-icon">🎓</div>
+          <div class="floating-card-meta">
+            <span data-translate="tabUniversities">🏫 Сургууль хайх</span>
+            <strong>Top 10 Universities</strong>
+          </div>
+        </div>
+        <div class="floating-overlay-card card-2">
+          <div class="floating-card-icon">💵</div>
+          <div class="floating-card-meta">
+            <span>Scholarship Waiver</span>
+            <strong>Up to 100%</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Showcase -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-translate="servicesTitle">Бидний цогц үйлчилгээ</h2>
+        <p data-translate="servicesSubtitle">БНСУ-д амжилттай суралцааж, амьдрахад тань хэрэгцээтэй бүх зүйлийг нэг дороос.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1 -->
+        <div class="service-card glass-card" data-target-tab="panel-universities" data-detail-page="service-university.html">
+          <div class="service-image-wrapper">
+            <img src="images/uni_prep.png" alt="Сургууль, Хэлний Бэлтгэл" class="service-img">
+            <div class="service-icon-badge">🏫</div>
+          </div>
+          <div class="service-content">
+            <h3 data-translate="service1Title">Сургууль, Хэлний Бэлтгэл</h3>
+            <p data-translate="service1Desc">БНСУ-ын шилдэг их дээд сургууль, хэлний бэлтгэлийн хөтөлбөрт шууд элсэх өргөдөл бэлтгэх, эсээ хянах, зөв сургууль сонгоход тусална.</p>
+            <div class="service-card-action">
+              <span class="service-learn-more" data-translate="serviceLearnMore">Дэлгэрэнгүй үзэх ➔</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="service-card glass-card" data-target-tab="panel-visa" data-detail-page="service-visa.html">
+          <div class="service-image-wrapper">
+            <img src="images/visa_doc.png" alt="Виз, Бичиг Баримт Гүйцэтгэл" class="service-img">
+            <div class="service-icon-badge">📄</div>
+          </div>
+          <div class="service-content">
+            <h3 data-translate="service2Title">Виз, Бичиг Баримт Гүйцэтгэл</h3>
+            <p data-translate="service2Desc">D-2/D-4 ангиллын визний шаардлага, банкны баталгаа, бичиг баримтын баталгаажуулалт, ЭСЯ-ны ярилцлагад бэлтгэх зөвлөмж.</p>
+            <div class="service-card-action">
+              <span class="service-learn-more" data-translate="serviceLearnMore">Дэлгэрэнгүй үзэх ➔</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="service-card glass-card" data-target-tab="panel-housing" data-detail-page="service-housing.html">
+          <div class="service-image-wrapper">
+            <img src="images/housing_search.png" alt="Тохилог Орон Сууц хайх" class="service-img">
+            <div class="service-icon-badge">🏠</div>
+          </div>
+          <div class="service-content">
+            <h3 data-translate="service3Title">Тохилог Орон Сууц хайх</h3>
+            <p data-translate="service3Desc">Оюутны дотуур байр, Гошивон, тусдаа нэг өрөө байр гэх мэт гадаад оюутнуудын төсөвт нийцсэн тохилог байруудыг санал болгоно.</p>
+            <div class="service-card-action">
+              <span class="service-learn-more" data-translate="serviceLearnMore">Дэлгэрэнгүй үзэх ➔</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="service-card glass-card" data-target-tab="panel-calculator" data-detail-page="service-living.html">
+          <div class="service-image-wrapper">
+            <img src="images/living_integration.png" alt="Амьжиргаа, Интеграци" class="service-img">
+            <div class="service-icon-badge">🌐</div>
+          </div>
+          <div class="service-content">
+            <h3 data-translate="service4Title">Амьжиргаа, Интеграци</h3>
+            <p data-translate="service4Desc">БНСУ-д очсоны дараах гадаад иргэний үнэмлэх (ARC) авах, банкны данс нээх, Солонгос утасны дугаар авах болон цагийн ажлын зөвшөөрөл авах практик заавар.</p>
+            <div class="service-card-action">
+              <span class="service-learn-more" data-translate="serviceLearnMore">Дэлгэрэнгүй үзэх ➔</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Student Dashboard -->
+  <section id="dashboard" class="dashboard-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-translate="hubTitle">Интерактив оюутны булан</h2>
+        <p data-translate="hubSubtitle">Солонгос дахь амьдралын өртгөө тооцож, шилдэг их сургуулиудыг шүүж, визний бүрдүүлэлтээ шалгаж, орон сууцны хувилбаруудтай танилцаарай.</p>
+      </div>
+
+      <div class="dashboard-container">
+        <!-- Dashboard Tab Controls -->
+        <nav class="dashboard-nav">
+          <button class="dashboard-tab-btn active" data-tab="panel-universities" data-translate="tabUniversities">🏫 Сургууль хайх</button>
+          <button class="dashboard-tab-btn" data-tab="panel-calculator" data-translate="tabCalculator">💰 Зардал Тооцоолуур</button>
+          <button class="dashboard-tab-btn" data-tab="panel-visa" data-translate="tabVisa">📄 Визний Бүрдүүлэлт Туслах</button>
+          <button class="dashboard-tab-btn" data-tab="panel-housing" data-translate="tabHousing">🏠 Орон сууцны каталог</button>
+        </nav>
+
+        <!-- PANEL 1: University Finder -->
+        <div id="panel-universities" class="dashboard-panel active">
+          <div class="uni-controls-wrap">
+            <div class="search-input-group">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="uni-search-input" class="form-control-input" placeholder="Сургуулийн нэр эсвэл мэргэжлээр хайх..." data-translate-placeholder="uniSearchPlaceholder">
+            </div>
+
+            <div class="select-input-group">
+              <select id="uni-filter-type" class="form-control-select" aria-label="Filter by Type">
+                <option value="all" data-translate="uniFilterTypeAll">Бүх хөтөлбөр</option>
+                <option value="university" data-translate="uniFilterTypeUni">Бакалавр / Магистр (D-2)</option>
+                <option value="language" data-translate="uniFilterTypeLang">Хэлний бэлтгэл (D-4)</option>
+              </select>
+            </div>
+
+            <div class="select-input-group">
+              <select id="uni-filter-loc" class="form-control-select" aria-label="Filter by Location">
+                <option value="all" data-translate="uniFilterLocAll">Бүх бүс</option>
+                <option value="seoul">Seoul</option>
+                <option value="busan">Busan</option>
+                <option value="daejeon">Daejeon</option>
+              </select>
+            </div>
+
+            <div class="tuition-slider-group">
+              <div class="slider-label-meta">
+                <span data-translate="uniFilterMaxTuition">Сургалтын төлбөр (Семестрээр)</span>
+                <strong id="uni-filter-tuition-val">₩5,000,000</strong>
+              </div>
+              <input type="range" id="uni-filter-tuition" class="custom-range-slider" min="1500000" max="5000000" step="100000" value="5000000" aria-label="Tuition Filter Slider">
+            </div>
+          </div>
+
+          <!-- Universities Result Grid -->
+          <div id="university-cards-grid" class="university-cards-grid">
+            <!-- Rendered Dynamically via JS -->
+          </div>
+        </div>
+
+        <!-- PANEL 2: Cost of Living Estimator -->
+        <div id="panel-calculator" class="dashboard-panel">
+          <div class="calculator-grid">
+            <div class="calc-sliders-card glass-card">
+              <h3 data-translate="calcHeading">БНСУ-д сар бүр гарах амьжиргааны зардлыг тооцоолно уу</h3>
+              <p class="hero-desc" data-translate="calcSubheading" style="margin-bottom: 30px;">Слайдеруудыг ашиглан Солонгос воноор (KRW) зардлаа тохируулахад доллар болон төгрөг рүү автоматаар хөрвөнө.</p>
+
+              <!-- Sliders -->
+              <div class="calc-slider-block">
+                <div class="calc-label-row">
+                  <label for="calc-rent" data-translate="calcLabelRent">Байр түрээс & Ашиглалтын зардал (Дотуур байр / Гошивон / Нэг өрөө):</label>
+                  <span id="calc-rent-val" class="calc-numeric-val">₩350,000</span>
+                </div>
+                <input type="range" id="calc-rent" class="custom-range-slider" min="150000" max="1200000" step="25000" value="350000">
+              </div>
+
+              <div class="calc-slider-block">
+                <div class="calc-label-row">
+                  <label for="calc-food" data-translate="calcLabelFood">Хоол хүнс (Гадуур хооллох, кафе, хүнсний дэлгүүр):</label>
+                  <span id="calc-food-val" class="calc-numeric-val">₩300,000</span>
+                </div>
+                <input type="range" id="calc-food" class="custom-range-slider" min="150000" max="800000" step="20000" value="300000">
+              </div>
+
+              <div class="calc-slider-block">
+                <div class="calc-label-row">
+                  <label for="calc-transport" data-translate="calcLabelTransit">Нийтийн тээврийн зардал (Метро, автобус, такси):</label>
+                  <span id="calc-transport-val" class="calc-numeric-val">₩70,000</span>
+                </div>
+                <input type="range" id="calc-transport" class="custom-range-slider" min="30000" max="250000" step="10000" value="70000">
+              </div>
+
+              <div class="calc-slider-block">
+                <div class="calc-label-row">
+                  <label for="calc-insurance" data-translate="calcLabelInsurance">Эрүүл мэндийн даатгал (National Health Insurance) & Эм тариа:</label>
+                  <span id="calc-insurance-val" class="calc-numeric-val">₩60,000</span>
+                </div>
+                <input type="range" id="calc-insurance" class="custom-range-slider" min="40000" max="150000" step="5000" value="60000">
+              </div>
+
+              <div class="calc-slider-block">
+                <div class="calc-label-row">
+                  <label for="calc-personal" data-translate="calcLabelPersonal">Хэрэглээний мөнгө (Утасны төлбөр, хувцас авах, хобби):</label>
+                  <span id="calc-personal-val" class="calc-numeric-val">₩150,000</span>
+                </div>
+                <input type="range" id="calc-personal" class="custom-range-slider" min="50000" max="600000" step="10000" value="150000">
+              </div>
+            </div>
+
+            <!-- Budget Summary Panel (Right side) -->
+            <div class="calc-summary-card glass-card">
+              <h4 class="calc-summary-title" data-translate="calcResultTitle">Сар бүрийн нийт тооцоолсон зардал</h4>
+              
+              <div class="calc-total-display-wrap">
+                <div id="calc-total-krw" class="total-value-krw">₩930,000</div>
+                <div class="total-conversions-row">
+                  <div class="conversion-col">
+                    <span>USD ($)</span>
+                    <strong id="calc-total-usd">$689</strong>
+                  </div>
+                  <div class="conversion-col">
+                    <span>MNT (₮)</span>
+                    <strong id="calc-total-mnt">₮2,371,500</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="budget-badge-wrap">
+                <span class="budget-badge-label" data-translate="calcBudgetLevel">Төсвийн зэрэглэлийн зөвлөмж:</span>
+                <div id="calc-budget-badge" class="budget-badge badge-mid">Balanced & Comfortable ⚖️</div>
+              </div>
+
+              <p id="calc-budget-tip" class="budget-tip-text">Allows you to rent a private room/goshiwon, dine out occasionally, enjoy cafe visits, and fully experience student life in Korea.</p>
+              
+              <p class="calc-disclaimer" data-translate="calcConvertDisclaimer">* Валютын хөрвүүлэлтийг одоогийн дундаж ханшаар хийсэн болно (1 USD = 1350 KRW, 1 KRW = 2.55 MNT).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 3: Visa Assistant Documentation -->
+        <div id="panel-visa" class="dashboard-panel">
+          <div class="visa-assistant-wrap">
+            <div class="visa-config-card glass-card">
+              <h3 data-translate="visaHeading">Визний Бичиг Баримтын Туслах</h3>
+              <p class="hero-desc" data-translate="visaSubheading" style="font-size: 14px; margin-bottom: 24px;">ЭСЯ-ны ярилцлагад ороход хэрэгтэй бичиг баримтын жагсаалтыг визний ангиллаар нь автоматаар үүсгэнэ.</p>
+              
+              <div class="visa-select-box-wrap">
+                <label for="visa-category-select" data-translate="visaSelectLabel" style="font-weight:600; font-size:13px; color:var(--text-secondary); display:block; margin-bottom:8px;">Визний ангилал сонгох:</label>
+                <select id="visa-category-select" class="form-control-select">
+                  <option value="d4" data-translate="visaOptionD4">D-4-1 (General Student - Language Course)</option>
+                  <option value="d2" data-translate="visaOptionD2">D-2 (Associate, Bachelor, Master, PhD Degree)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="visa-checklist-card glass-card">
+              <div id="visa-checklist-container">
+                <!-- Checklist elements injected via JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 4: Housing Catalog -->
+        <div id="panel-housing" class="dashboard-panel">
+          <div class="section-header" style="margin-bottom: 40px;">
+            <h3 data-translate="houseHeading">Олон улсын оюутнуудад зориулсан орон сууцны мэдээлэл</h3>
+            <p data-translate="houseSubheading">Өмнөд Солонгост оюутнуудын амьдардаг нийтлэг сууцны давуу тал, зардлыг харьцуулаарай.</p>
+          </div>
+
+          <div class="housing-catalog-grid">
+            <!-- Card 1 -->
+            <div class="housing-card glass-card">
+              <div>
+                <h3 data-translate="houseTypeDorm">Сургуулийн дотуур байр</h3>
+                <p data-translate="houseTypeDormDesc">Аюулгүй, кампус дотор байрладаг. Олон орны найз нөхөдтэй болоход хамгийн тохиромжтой. Ихэвчлэн 2-4-үүлээ өрөөгөө хуваалцдаг.</p>
+                <ul class="housing-features-list">
+                  <li data-translate="navHome">24/7 Security & CCTV</li>
+                  <li>Campus Wifi</li>
+                  <li>Gym & Study Lounge access</li>
+                </ul>
+              </div>
+              <div class="housing-cost-row">
+                <span data-translate="houseAvgCost">Дундаж сарын зардал</span>
+                <strong>₩250,000 - ₩450,000</strong>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="housing-card glass-card">
+              <div>
+                <h3 data-translate="houseTypeGoshi">Гошивон (Жижиг өрөө)</h3>
+                <p data-translate="houseTypeGoshiDesc">Маш хэмнэлттэй, бага талбайтай боловч дотроо шүршүүр, бие засах газартай хувийн өрөө. Үнэгүй будаа, кимчи, рамен санал болгодог давуу талтай.</p>
+                <ul class="housing-features-list">
+                  <li>Private room & bathroom</li>
+                  <li>No large deposit needed</li>
+                  <li>Free Rice, Kimchi & Ramen</li>
+                </ul>
+              </div>
+              <div class="housing-cost-row">
+                <span data-translate="houseAvgCost">Дундаж сарын зардал</span>
+                <strong>₩300,000 - ₩550,000</strong>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="housing-card glass-card">
+              <div>
+                <h3 data-translate="houseTypeOneroom">Нэг өрөө байр (Studio)</h3>
+                <p data-translate="houseTypeOneroomDesc">Хувийн орон зайг эрхэмлэгчдэд зориулсан тохилог тусдаа байр. Барьцаа мөнгө (Key Money) өндөр байдаг ч гал тогоо болон угаалгын машин хувьдаа эзэмшинэ.</p>
+                <ul class="housing-features-list">
+                  <li>Ultimate privacy & space</li>
+                  <li>Personal kitchen & washer</li>
+                  <li>Flexible utilities usage</li>
+                </ul>
+              </div>
+              <div class="housing-cost-row">
+                <span data-translate="houseAvgCost">Дундаж сарын зардал</span>
+                <strong>₩450,000 - ₩800,000</strong>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="housing-card glass-card">
+              <div>
+                <h3 data-translate="houseTypeShare">Шэйр Хаус / Хамтран амьдрах байр</h3>
+                <p data-translate="houseTypeShareDesc">Хувийн өрөөтэй боловч зочны өрөө болон гал тогоогоо бусад оюутнуудтай хамтран ашигладаг. Олон улсын найрсаг хамт олонтой амьдрах сонирхолтой оюутнуудад зориулагдсан.</p>
+                <ul class="housing-features-list">
+                  <li>Fully furnished social lounge</li>
+                  <li>Bilingual roommates</li>
+                  <li>Shared kitchen utilities</li>
+                </ul>
+              </div>
+              <div class="housing-cost-row">
+                <span data-translate="houseAvgCost">Дундаж сарын зардал</span>
+                <strong>₩350,000 - ₩600,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consultation Form Section -->
+  <section id="booking" class="booking-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-translate="bookSectionTitle">Үнэ төлбөргүй зөвлөгөө захиалах</h2>
+        <p data-translate="bookSectionSubtitle">Сургууль элсэлтийн Солонгос мэргэжилтнүүдтэй холбогдон өөрт тохирсон суралцах хувийн төлөвлөгөөг боловсруулаарай.</p>
+      </div>
+
+      <div class="booking-wizard-card glass-card">
+        <!-- Interactive Booking Wizard Container -->
+        <div id="booking-wizard-container">
+          <!-- Progress tracker header -->
+          <div class="wizard-progress-header-wrap">
+            <div class="wizard-progress-meta">
+              <span data-translate="navDashboard">Зөвлөгөө захиалга</span>
+              <strong id="wizard-progress-percent">0%</strong>
+            </div>
+            <div class="wizard-progress-bg">
+              <div id="wizard-progress-bar" class="wizard-progress-fill"></div>
+            </div>
+            
+            <div class="step-indicators-wrap">
+              <div class="step-indicator-item active">
+                <div class="step-ind-circle">1</div>
+                <span data-translate="bookStep1">Хувийн мэдээлэл</span>
+              </div>
+              <div class="step-indicator-item">
+                <div class="step-ind-circle">2</div>
+                <span data-translate="bookStep2">Боловсрол & Хөтөлбөр</span>
+              </div>
+              <div class="step-indicator-item">
+                <div class="step-ind-circle">3</div>
+                <span data-translate="bookStep3">Нэгтгэл</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wizard Multistep Form -->
+          <form id="consultation-booking-form" novalidate>
+            <!-- STEP 1: Personal Info -->
+            <div class="wizard-step active">
+              <div class="form-group-block">
+                <label for="book-name" data-translate="bookLabelName">Овог нэр (Гадаад паспортын дагуу)</label>
+                <input type="text" id="book-name" class="wizard-form-input" placeholder="Овог нэрээ Англиар оруулна уу" data-translate-placeholder="bookPlaceholderName">
+                <span id="name-error" class="form-error" data-translate="bookErrorName">Та өөрийн бүтэн нэрийг оруулна уу.</span>
+              </div>
+
+              <div class="wizard-two-col">
+                <div class="form-group-block">
+                  <label for="book-email" data-translate="bookLabelEmail">Имэйл хаяг</label>
+                  <input type="email" id="book-email" class="wizard-form-input" placeholder="example@domain.com" data-translate-placeholder="bookPlaceholderEmail">
+                  <span id="email-error" class="form-error" data-translate="bookErrorEmail">Зөв имэйл хаяг оруулна уу.</span>
+                </div>
+                <div class="form-group-block">
+                  <label for="book-phone" data-translate="bookLabelPhone">Утасны дугаар (Холбогдох дугаар)</label>
+                  <input type="text" id="book-phone" class="wizard-form-input" placeholder="Дугаараа оруулна уу" data-translate-placeholder="bookPlaceholderPhone">
+                  <span id="phone-error" class="form-error" data-translate="bookErrorPhone">Утасны дугаараа оруулна уу.</span>
+                </div>
+              </div>
+
+              <div class="form-group-block">
+                <label for="book-current-level" data-translate="bookLabelLevel">Таны одоогийн боловсролын зэрэг</label>
+                <select id="book-current-level" class="form-control-select" style="padding: 14px 16px;">
+                  <option value="high" data-translate="bookLevelHigh">Бүрэн дунд (Элсэгч / Төгсөгч)</option>
+                  <option value="uni" data-translate="bookLevelUni">Их сургуулийн оюутан (Бакалавр / Магистр)</option>
+                  <option value="grad" data-translate="bookLevelGrad">Их сургууль төгссөн / Дипломтой</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- STEP 2: Preferences & Academics -->
+            <div class="wizard-step">
+              <div class="form-group-block">
+                <label for="book-program-type" data-translate="bookLabelProg">Та ямар хөтөлбөрөор суралцах хүсэлтэй байна вэ?</label>
+                <select id="book-program-type" class="form-control-select" style="padding: 14px 16px;">
+                  <option value="" disabled selected>-- Хөтөлбөр сонгох --</option>
+                  <option value="language" data-translate="bookProgLang">Солонгос хэлний бэлтгэл (D-4)</option>
+                  <option value="bachelor" data-translate="bookProgBach">Бакалаврын зэрэг (D-2)</option>
+                  <option value="master" data-translate="bookProgMast">Магистр / Докторын зэрэг (D-2)</option>
+                </select>
+                <span id="program-error" class="form-error" data-translate="bookErrorProg">Хөтөлбөрийн төрлийг сонгоно уу.</span>
+              </div>
+
+              <div class="wizard-two-col">
+                <div class="form-group-block">
+                  <label for="book-term" data-translate="bookLabelTerm">Элсэхээр төлөвлөж буй улирал</label>
+                  <select id="book-term" class="form-control-select" style="padding: 14px 16px;">
+                    <option value="Fall 2026">Fall 2026 (September)</option>
+                    <option value="Winter 2026">Winter 2026 (December)</option>
+                    <option value="Spring 2027">Spring 2027 (March)</option>
+                    <option value="Summer 2027">Summer 2027 (June)</option>
+                  </select>
+                </div>
+                <div class="form-group-block">
+                  <label for="book-korean" data-translate="bookLabelKorean">Таны Солонгос хэлний одоогийн түвшин</label>
+                  <select id="book-korean" class="form-control-select" style="padding: 14px 16px;">
+                    <option value="none" data-translate="bookLevelNone">Солонгос хэлний мэдлэггүй (Анхан шат)</option>
+                    <option value="basic" data-translate="bookLevelBasic">Өдөр тутмын ярианы мэдлэгтэй / TOPIK 1-2</option>
+                    <option value="inter" data-translate="bookLevelInter">Дунд шатны мэдлэгтэй / TOPIK 3-4</option>
+                    <option value="advanced" data-translate="bookLevelAdv">Гүнзгий шат / TOPIK 5-6</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group-block">
+                <label for="book-notes" data-translate="bookLabelNotes">Нэмэлт асуулт эсвэл онцгой хүсэлтүүд</label>
+                <textarea id="book-notes" class="wizard-form-input" style="height: 100px; resize: none;" placeholder="Сонгохыг хүсч буй сургууль, мэргэжил эсвэл төсвийн боломжийнхоо талаар бичнэ үү..." data-translate-placeholder="bookPlaceholderNotes"></textarea>
+              </div>
+            </div>
+
+            <!-- STEP 3: Summary -->
+            <div class="wizard-step">
+              <div class="wizard-summary-layout">
+                <h4 data-translate="bookStep3">Бүртгэлийн нэгтгэл мэдээлэл</h4>
+                <div class="summary-data-list">
+                  <div class="summary-data-item">
+                    <span data-translate="bookLabelName">Нэр:</span>
+                    <strong id="summary-name">John Doe</strong>
+                  </div>
+                  <div class="summary-data-item">
+                    <span data-translate="bookLabelEmail">Имэйл:</span>
+                    <strong id="summary-email">john@example.com</strong>
+                  </div>
+                  <div class="summary-data-item">
+                    <span data-translate="bookLabelPhone">Утас:</span>
+                    <strong id="summary-phone">+976-9999-9999</strong>
+                  </div>
+                  <div class="summary-data-item">
+                    <span data-translate="bookLabelProg">Хөтөлбөр:</span>
+                    <strong id="summary-program">Bachelor's Degree</strong>
+                  </div>
+                  <div class="summary-data-item">
+                    <span data-translate="bookLabelTerm">Хичээлийн улирал:</span>
+                    <strong id="summary-term">Spring 2027</strong>
+                  </div>
+                  <div class="summary-data-item">
+                    <span data-translate="bookLabelKorean">Хэлний түвшин:</span>
+                    <strong id="summary-korean">TOPIK Level 3-4</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Wizard Bottom Control Actions -->
+            <div class="booking-wizard-actions">
+              <button type="button" id="prev-step-btn" class="btn-secondary" style="padding: 10px 22px;">Back</button>
+              <button type="button" id="next-step-btn" class="btn-primary" style="padding: 10px 22px;">Continue</button>
+              <button type="submit" id="submit-booking-btn" class="btn-primary" style="padding: 10px 22px; display: none;">Schedule Consultation 🚀</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Consultation SUCCESS Card -->
+        <div id="booking-success-container" class="booking-success-container">
+          <canvas id="confetti-canvas" class="confetti-canvas-element"></canvas>
+          <div class="success-icon-globe">✓</div>
+          <h3 class="success-title" data-translate="bookSuccessTitle">Хүсэлт амжилттай бүртгэгдлээ! 🎉</h3>
+          <p class="success-desc" data-translate="bookSuccessDesc">Баярлалаа! Таны мэдээлэл бүртгэгдлээ. Манай ахлах сургалтын зөвлөх таны профайлыг хянаж үзээд 24 цагийн дотор Имэйл эсвэл утсаар холбогдож үнэ төлбөргүй зөвлөгөө өгөх видео дуудлагын цагийг тохируулах болно.</p>
+          <button id="restart-booking-btn" class="btn-secondary" data-translate="bookSuccessBtnReset">Дахин хүсэлт илгээх</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions Section -->
+  <section id="faq" class="faq-section" style="background-color: var(--bg-secondary); transition: background-color var(--transition-smooth);">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-translate="faqSectionTitle">Түгээмэл асуудаг асуултууд</h2>
+        <p data-translate="faqSectionSubtitle">Солонгост суралцахаар бэлтгэж буй оюутнуудад хамгийн их тулгардаг асуултуудын хариултууд.</p>
+      </div>
+
+      <div class="faq-grid">
+        <!-- Q1 -->
+        <div class="faq-item glass-card">
+          <div class="faq-q">
+            <h3 data-translate="faq1Q">Би хэзээнээс бэлтгэлээ эхлэх хэрэгтэй вэ?</h3>
+            <div class="faq-icon-indicator">+</div>
+          </div>
+          <div class="faq-a">
+            <div class="faq-a-inner" data-translate="faq1A">
+              Хэлний бэлтгэлд (D-4) элсэхийн тулд хичээл эхлэхээс 3-4 сарын өмнө бэлдэж эхэлнэ (Жилд 4 удаа элсэлт авдаг: 3, 6, 9, 12 сард). Харин үндсэн ангид (D-2) элсэхийн тулд 6-8 сарын өмнө бэлтгэлийг хангана (Жилд 2 удаа: 3 болон 9 сар).
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="faq-item glass-card">
+          <div class="faq-q">
+            <h3 data-translate="faq2Q">Виз мэдүүлэхэд банкны дансанд байх доод хэмжээ хэд вэ?</h3>
+            <div class="faq-icon-indicator">+</div>
+          </div>
+          <div class="faq-a">
+            <div class="faq-a-inner" data-translate="faq2A">
+              Бакалавр, магистрын D-2 визэнд ихэвчлэн 16,000-аас 20,000 ам.долларын баталгаа ЭСЯ шаарддаг. Хэлний бэлтгэлийн D-4 визний хувьд 8,000-аас 10,000 ам.долларыг тодорхой хугацаанд царцаасан байх хэрэгтэй байдаг.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="faq-item glass-card">
+          <div class="faq-q">
+            <h3 data-translate="faq3Q">Солонгост сурч байхдаа цагийн ажил хийх боломжтой юу?</h3>
+            <div class="faq-icon-indicator">+</div>
+          </div>
+          <div class="faq-a">
+            <div class="faq-a-inner" data-translate="faq3A">
+              Тийм ээ! Гадаад оюутны ARC үнэмлэх авсан тохиолдолд эхний 1 семестр (эсвэл 6 сар) амжилттай суралцасаны дараа сургуулиасаа зөвшөөрөл авч, долоо хоногт 20-30 хүртэл цагаар хууль ёсоор цагийн ажил хийх эрхтэй болно.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="faq-item glass-card">
+          <div class="faq-q">
+            <h3 data-translate="faq4Q">Солонгост тэтгэлэг авахын тулд TOPIK-ын хэддүгээр түвшинтэй байх ёстой вэ?</h3>
+            <div class="faq-icon-indicator">+</div>
+          </div>
+          <div class="faq-a">
+            <div class="faq-a-inner" data-translate="faq4A">
+              Бакалавр элсэлтэнд TOPIK 3-тай бол 30% төлбөрийн хөнгөлөлт, TOPIK 4-тэй бол 50%, харин TOPIK 5 эсвэл 6-тай байвал маш олон сургууль сургалтын төлбөрөөс 100% чөлөөлөх тэтгэлэг санал болгодог.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h2 data-translate="logoName">K-Study Bridge</h2>
+          <p data-translate="footerDesc">Өмнөд Солонгост элсэн суралцах, визний туслалцаа, орон сууц, нийгмийн амьдралыг удирдан чиглүүлэх таны хамгийн найдвартай хамтрагч. Оюутнуудын гүүр.</p>
+        </div>
+
+        <div class="footer-contact">
+          <h3 data-translate="footerContact">Холбоо барих</h3>
+          <ul class="footer-contact-list">
+            <li data-translate="footerAddress">📍 Сөүл дэх салбар: БНСУ, Сөүл хот, Гангнам дүүрэг, Тэхеран-ро 108, 5 давхар</li>
+            <li data-translate="footerPhone">📞 Утас: +82-2-555-9080 (Сөүл) / +976-7011-0000 (Улаанбаатар)</li>
+            <li>✉ Email: support@kstudybridge.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copyright" data-translate="footerCopyright">
+          © 2026 K-Study Bridge. Бүх эрх хуулиар хамгаалагдсан. Ирээдүйн оюутнуудад зориулан ❤️-ээр бүтээв.
+        </div>
+        <div class="footer-social-icons">
+          <a href="#" class="social-icon-btn" aria-label="Facebook">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 8h-2a2 2 0 0 0-2 2v2h4"/><path d="M14 16v-4"/></svg>
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-icon-btn" aria-label="Telegram">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle"><path d="M22 2L11 13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AI Chatbot Widget (Ji-Woo) -->
+  <div id="chatbot-widget-container" class="chatbot-widget-container">
+    <!-- Chat Toggle Floating Bubble Button -->
+    <button id="chatbot-toggle-btn" class="chatbot-toggle-btn" aria-label="Open Chatbot Advisor">
+      <span class="bot-toggle-icon">💬</span>
+      <span class="bot-toggle-badge">AI</span>
+    </button>
+
+    <!-- Chat window panel card -->
+    <div id="chatbot-window" class="chatbot-window glass-card">
+      <!-- Chat Header -->
+      <div class="chatbot-header">
+        <div class="bot-header-info">
+          <div class="bot-avatar">🤖</div>
+          <div class="bot-title-meta">
+            <h3>Ji-Woo (Жи-Ү)</h3>
+            <span class="bot-status-indicator"><span class="dot-status"></span><span id="chat-status-text" data-translate="chatStatusOffline">Offline Mode</span></span>
+          </div>
+        </div>
+        <div class="bot-header-actions">
+          <button id="chatbot-settings-btn" class="chatbot-settings-btn" aria-label="Chatbot Settings">⚙️</button>
+          <button id="chatbot-close-btn" class="chatbot-close-btn" aria-label="Close Chat">×</button>
+        </div>
+      </div>
+
+      <!-- API Key Setup Panel -->
+      <div id="chatbot-settings-panel" class="chatbot-settings-panel">
+        <div class="settings-panel-inner">
+          <label for="gemini-api-key" data-translate="settingsApiKeyLabel">Google Gemini API Key:</label>
+          <div class="api-key-input-row">
+            <input type="password" id="gemini-api-key" placeholder="AI идэвхжүүлэх түлхүүр оруулах..." data-translate-placeholder="settingsPlaceholder">
+            <button id="save-api-key-btn" class="btn-save-key" data-translate="settingsBtnSave">Хадгалах</button>
+          </div>
+          <p class="settings-help-text" id="settings-help-text" data-translate="settingsHelpText">Gemini түлхүүр оруулахад жинхэнэ AI систем идэвхжих бөгөөд оруулахгүй бол оффлайн горим ажиллана. Түлхүүрийг Google AI Studio-оос үнэгүй авна.</p>
+        </div>
+      </div>
+
+      <!-- Scrollable Message Body panel -->
+      <div id="chatbot-messages-body" class="chatbot-messages-body">
+        <!-- Message bubbles are injected dynamically here -->
+      </div>
+
+      <!-- Typing Indicator -->
+      <div id="chatbot-typing-indicator" class="chatbot-typing-indicator">
+        <div class="typing-dots-wave">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <span class="typing-lbl">Ji-Woo is typing...</span>
+      </div>
+
+      <!-- Quick Reply Suggestions wrapper -->
+      <div id="chatbot-chips-container" class="chatbot-chips-container">
+        <!-- Renders clickable quick suggestion chips dynamically -->
+      </div>
+
+      <!-- Input box area footer -->
+      <div class="chatbot-input-footer">
+        <input type="text" id="chatbot-text-input" placeholder="Асуултаа энд бичнэ үү..." aria-label="Type your question">
+        <button id="chatbot-send-btn" class="chatbot-send-btn" aria-label="Send Message">
+          <svg viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts: Universities data loads first, followed by widget behaviors, booking, and main controller -->
+  <script src="js/universities.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
+

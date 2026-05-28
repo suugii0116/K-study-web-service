@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-Study Bridge | Виз, Бичиг Баримт Гүйцэтгэл</title>
+  <meta name="description" content="D-2/D-4 визний шаардлага, банкны баталгаа, бичиг баримтын баталгаажуулалт, ЭСЯ-ны ярилцлагад бэлтгэх дэлгэрэнгүй үйлчилгээ." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="glowing-bg-circle glowing-bg-circle-1"></div>
+  <div class="glowing-bg-circle glowing-bg-circle-2"></div>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon-img-wrap">
+          <img src="images/k_logo.png" alt="K-Study Bridge" class="nav-logo-img" />
+        </div>
+        <div class="logo-meta">
+          <h1>K-Study Bridge</h1>
+          <span>БНСУ-д Суралцах Гүүр</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link" data-translate="navHome">Нүүр</a></li>
+        <li><a href="index.html#services" class="nav-link" data-translate="navServices">Үйлчилгээ</a></li>
+        <li><a href="index.html#booking" class="nav-link" data-translate="navBooking">Зөвлөгөө Авах</a></li>
+      </ul>
+      <div class="nav-actions">
+        <select id="lang-select" class="lang-select-dropdown" aria-label="Select Language">
+          <option value="mn">Монгол 🇲🇳</option>
+          <option value="en">English 🇺🇸</option>
+          <option value="ko">한국어 🇰🇷</option>
+        </select>
+        <button id="theme-toggle-btn" class="theme-btn" aria-label="Toggle Theme">🌙</button>
+        <a href="index.html#booking" class="btn-primary" data-translate="heroBtnConsult">Үнэгүй зөвлөгөө авах</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="detail-page-wrapper container">
+    <section class="detail-page-hero">
+      <div>
+        <span class="detail-page-badge" data-translate="detailVisaBadge">📄 Виз, Бичиг Баримт Гүйцэтгэл</span>
+        <h1 data-translate="detailVisaTitle">Визний шаардлага, банкны баталгаа, ЭСЯ-ны бэлтгэлээ алдаагүй бэлдэх.</h1>
+        <p data-translate="detailVisaDesc">D-2 болон D-4 визний бүрдүүлэлтэд шаардагдах бичиг баримтыг нэг бүрчлэн шалгаж, банкин дахь баталгааны хэмжээ, ЭСЯ-ны ярилцлагын бэлтгэл, албан ёсны баталгаажуулалтад тавигдах шаардлагыг энгийн байдлаар тайлбарлана.</p>
+        <div class="hero-actions">
+          <a href="index.html#booking" class="btn-primary" data-translate="detailVisaPrimary">Визний зөвлөгөөг эхлүүлэх</a>
+          <a href="index.html#dashboard" class="btn-secondary" data-translate="detailVisaSecondary">Визний хэсэг рүү буцах</a>
+        </div>
+      </div>
+
+      <aside class="detail-panel">
+        <h3 data-translate="detailVisaPanelTitle">Энэ үйлчилгээний гол агуулга</h3>
+        <div class="detail-steps">
+          <article class="detail-step">
+            <span class="detail-step-number">1</span>
+            <div>
+              <strong data-translate="detailVisaStep1Title">Визний төрөл, шаардлага</strong>
+              <p data-translate="detailVisaStep1Desc">D-2/D-4-ын ялгаа, шаардлагатай бичиг баримт, хугацаа болон хүлээн авах боломжийг тодорхойлно.</p>
+            </div>
+          </article>
+          <article class="detail-step">
+            <span class="detail-step-number">2</span>
+            <div>
+              <strong data-translate="detailVisaStep2Title">Банкны баталгаа, баримт шалгалт</strong>
+              <p data-translate="detailVisaStep2Desc">Банкны баталгааны хэмжээ, хадгалалт, хуулбарын зохион байгуулалт, албан ёсны баталгаажуулалттай холбоотой ажлыг удирдана.</p>
+            </div>
+          </article>
+          <article class="detail-step">
+            <span class="detail-step-number">3</span>
+            <div>
+              <strong data-translate="detailVisaStep3Title">ЭСЯ-ны ярилцлага</strong>
+              <p data-translate="detailVisaStep3Desc">Ярилцлагын асуулт, хариулт, бэлтгэл, сургууль болон зорилгоо илэрхийлэхдээ анхаарах зүйлсийг дамжуулна.</p>
+            </div>
+          </article>
+        </div>
+      </aside>
+    </section>
+
+    <section class="detail-grid">
+      <article class="detail-card glass-card">
+        <h3 data-translate="detailVisaDocTitle">Бэлтгэх баримт</h3>
+        <ul>
+          <li data-translate="detailVisaDocItem1">Иргэний үнэмлэх, диплом, транскрипт</li>
+          <li data-translate="detailVisaDocItem2">Сургуульд элсэх зөвшөөрөл, хүлээн зөвшөөрөх бичиг</li>
+          <li data-translate="detailVisaDocItem3">Банкны баталгааны хуулбар</li>
+          <li data-translate="detailVisaDocItem4">Төлбөрийн баримт, гэр бүлийн лавлагаа</li>
+        </ul>
+      </article>
+
+      <article class="detail-card glass-card">
+        <h3 data-translate="detailVisaWatchTitle">Анхаарах зүйл</h3>
+        <ul>
+          <li data-translate="detailVisaWatchItem1">Апостиль болон ЭСЯ-ны баталгаажуулалт</li>
+          <li data-translate="detailVisaWatchItem2">Бичиг баримтын нэр, огноо зөв эсэх</li>
+          <li data-translate="detailVisaWatchItem3">Төсөв, банкин дахь үлдэгдлийг тогтмол хадгалах</li>
+          <li data-translate="detailVisaWatchItem4">ЭСЯ-ны ярилцлагад зорилгоо тодорхой илэрхийлэх</li>
+        </ul>
+      </article>
+
+      <article class="detail-card glass-card">
+        <h3 data-translate="detailVisaResultTitle">Энэ үйлчилгээний үр дүн</h3>
+        <ul>
+          <li data-translate="detailVisaResultItem1">Бичиг баримтын алдааг багасгана</li>
+          <li data-translate="detailVisaResultItem2">Визний мэдүүлгийн дагаж мөрдөх шаардлагыг тайлбарлана</li>
+          <li data-translate="detailVisaResultItem3">Ярилцлагын бэлтгэлийг системтэй болгоно</li>
+          <li data-translate="detailVisaResultItem4">Дараагийн алхмуудыг энгийн замаар явуулна</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="detail-card glass-card" style="margin-top: 30px;">
+      <h3 data-translate="detailVisaHelpTitle">Бидний тусламж</h3>
+      <p data-translate="detailVisaHelpText">Та өргөдлийн баримтаа бэлдээд, визний хугацааг хойшлуулахгүй байхын тулд сонголт, баталгаажуулалт, ярилцлагын дэмжлэгийг нэг дороос авч болно.</p>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <footer class="footer" style="padding-bottom: 40px;">
+    <div class="container" style="padding: 20px 0 0; text-align: center; color: var(--text-muted);">
+      <p>© 2026 K-Study Bridge. БНСУ-д суралцах аялалын туршлагыг хялбар, найдвартай болгоно.</p>
+    </div>
+  </footer>
+</body>
+</html>
